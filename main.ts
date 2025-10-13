@@ -47,8 +47,7 @@ if (input.lightLevel() > 208) {
     neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.show()
-} else {
-    (input.lightLevel() <= 51) 
+} else { (input.lightLevel() <= 51) 
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
