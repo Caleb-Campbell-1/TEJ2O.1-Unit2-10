@@ -9,13 +9,13 @@ basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 // variables
-let lightLevel = 0
-let neopixelStrip: neopixel.Strip = null
+// let lightLevel = 0
+// let neopixelStrip: neopixel.Strip = null
 
 // comment
-basic.forever(function () {
-    let neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
-    let lightLevel = input.lightLevel()
+//basic.forever(function () {
+    const neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
+    const lightLevel = input.lightLevel()
     led.plotBarGraph(
         lightLevel,
         255
@@ -64,7 +64,7 @@ basic.forever(function () {
     basic.pause(1000)
     basic.showIcon(IconNames.Yes)
 } else {
-    (lightLevel <= 51)
+//    (lightLevel <= 51)
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -72,4 +72,3 @@ basic.forever(function () {
     neopixelStrip.show()
 }
     })
-})
